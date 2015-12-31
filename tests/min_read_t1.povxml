@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE cfepov SYSTEM "/usr/share/cgc-docs/cfe-pov.dtd">
+<cfepov>
+<cbid>service</cbid>
+<replay>
+    <negotiate><type1><ipmask>0x3f3f3f3f</ipmask><regmask>0x3f3f3f3f</regmask><regnum>6</regnum></type1></negotiate>
+    <read><length>68</length></read>
+</replay>
+</cfepov>
+
