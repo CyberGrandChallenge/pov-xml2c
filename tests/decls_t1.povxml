@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE cfepov SYSTEM "/usr/share/cgc-docs/cfe-pov.dtd">
+<cfepov>
+<cbid>service</cbid>
+<replay>
+    <negotiate><type1><ipmask>0x3f3f3f3f</ipmask><regmask>0x3f3f3f3f</regmask><regnum>6</regnum></type1></negotiate>
+    <decl><var>FOO</var><value><data>foo</data></value></decl>
+    <decl><var>BAR</var><value><var>FOO</var></value></decl>
+    <decl><var>BAZ</var><value><substr><var>BAR</var><begin>1</begin><end>10</end></substr></value></decl>
+    <decl><var>VAR1</var><value><substr><var>BAZ</var><end>10</end></substr></value></decl>
+    <decl><var>VAR2</var><value><substr><var>VAR1</var><begin>10</begin></substr></value></decl>
+    <decl><var>VAR3</var><value><substr><var>VAR2</var><end>-2</end></substr></value></decl>
+</replay>
+</cfepov>
+

@@ -1,0 +1,16 @@
+Source: cgc-pov-xml2c
+Section: net
+Priority: standard
+Maintainer: Chris Eagle <cseagle@nps.edu>
+Build-Depends: debhelper (>= 8.0.0), libxml2-dev (>= 2.4), libpcre3-dev (>= 8.30)
+Standards-Version: 3.9.3
+Homepage: http://www.darpa.mil/cybergrandchallenge
+
+Package: cgc-pov-xml2c
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libpcre3, libxml2
+Description: CGC XML to C conversion for PoVs
+ pov-xml2c is a utility for converting xml PoV specifications into C source
+ compatible with the DECREE platform.  When linked against provided support
+ libraries, the end result is a DECREE executable that performs all of the 
+ actions specified in the input xml specification.
