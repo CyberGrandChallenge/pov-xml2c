@@ -1,0 +1,11 @@
+cgc-pov-xml2c (10551-cfe-rc8) UNRELEASED; urgency=low
+
+  * build
+
+ -- Brian Caswell <bmc@lungetech.com>  Tue, 10 Jan 2017 20:02:13 +0000
+
+cgc-pov-xml2c (0.1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Brian Caswell <bmc@lungetech.com>  Wed, 05 Mar 2014 17:43:19 +0000

@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE cfepov SYSTEM "/usr/share/cgc-docs/cfe-pov.dtd">
+<cfepov>
+<cbid>service</cbid>
+<replay>
+    <negotiate><type2 /></negotiate>
+    <read><length>68</length></read>
+    <read><delim>\n</delim><assign><var>TYPE2_VALUE</var><slice begin="3" /></assign></read>
+    <read><delim>\n</delim><assign><var>FOO</var><slice begin="-5" /></assign></read>
+    <read><delim>\n</delim><assign><var>BAR</var><slice end="-1" /></assign></read>
+    <read><delim>\n</delim><assign><var>BAZ</var><slice begin="4" end="-1" /></assign></read>
+    <read><delim>\n</delim><match><pcre>[0-9]+</pcre></match></read>
+    <read><delim>\n</delim><match><data>abcdefghijk</data></match></read>
+    <read><delim>\n</delim><match><var>FOO</var></match></read>
+    <submit><var>TYPE2_VALUE</var></submit>
+</replay>
+</cfepov>
+
